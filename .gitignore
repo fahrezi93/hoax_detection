@@ -3,14 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Large model files (will be downloaded from HF Hub during deployment)
+# Large model files
 *.safetensors
 *.pt
 *.pth
 *.bin
 *.ckpt
 
-# Model directories (will be downloaded from HF Hub)
+# Model directories
 backend/retrained_model/
 backend/models/hoax_model/
 final_hoax_model/

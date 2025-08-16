@@ -175,7 +175,7 @@ cython_debug/
 *.sqlite
 *.sqlite3
 
-# Model files
+# Model files (large files)
 models/*.bin
 models/*.safetensors
 models/*.ckpt
