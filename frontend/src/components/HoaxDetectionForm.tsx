@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { Search, Globe, FileText, AlertCircle } from 'lucide-react'
-import { hoaxDetectionApi } from '../services/api'
-import { PredictionData } from '../types'
+import { enhancedApi, EnhancedPredictionData } from '../services/enhancedApi'
 import toast from 'react-hot-toast'
 
 interface HoaxDetectionFormProps {
   onPredictionStart: () => void
-  onPredictionComplete: (result: PredictionData) => void
+  onPredictionComplete: (result: EnhancedPredictionData) => void
   isLoading: boolean
 }
 
@@ -60,7 +59,7 @@ const HoaxDetectionForm: React.FC<HoaxDetectionFormProps> = ({
       onPredictionStart()
       
       const data = inputType === 'text' ? { text: text.trim() } : { url: url.trim() }
-      const result = await hoaxDetectionApi.predict(data)
+      const result = await enhancedApi.predict(data)
       
       onPredictionComplete(result)
       toast.success('Analisis berhasil diselesaikan!')

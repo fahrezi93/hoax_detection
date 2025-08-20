@@ -1,5 +1,5 @@
 import React from 'react'
-import { Shield, Github, Twitter, Mail } from 'lucide-react'
+import { Shield, Github, Mail, Instagram } from 'lucide-react'
 
 const Footer: React.FC = () => {
   return (
@@ -25,11 +25,11 @@ const Footer: React.FC = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com/moh.fahrezi"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
-                aria-label="Twitter"
+                aria-label="Instagram"
               >
-                <Twitter className="h-5 w-5" />
+                <Instagram className="h-5 w-5" />
               </a>
               <a
                 href="#"
@@ -79,15 +79,11 @@ const Footer: React.FC = () => {
               <li className="text-gray-300">
                 <span className="block">Email:</span>
                 <a
-                  href="mailto:info@hoaxdetector.id"
+                  href="mailto:mohfahrezi93@gmail.com"
                   className="text-primary-400 hover:text-primary-300 transition-colors duration-200"
                 >
-                  info@hoaxdetector.id
+                  mohfahrezi93@gmail.com
                 </a>
-              </li>
-              <li className="text-gray-300">
-                <span className="block">Jam Kerja:</span>
-                <span>Senin - Jumat, 09:00 - 17:00 WIB</span>
               </li>
             </ul>
           </div>
